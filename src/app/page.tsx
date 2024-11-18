@@ -23,9 +23,9 @@ export default function HomePage() {
                         <h1 className="text-4xl md:text-5xl font-bold text-black">Welcome to The Template Vault</h1>
                         <p className="mt-4 text-lg text-white">Discover innovative website templates and AI-generated solutions to elevate your business.</p>
                         <Link href="/book">
-                        <button className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
-                            Explore Our Services
-                        </button>
+                            <button className="bg-#F4F4F3 text-#EC5C39 px-4 py-2 rounded font-semibold hover:bg-#EC5C39 hover:text-white">
+                                Explore Our Services
+                            </button>
                         </Link>
                     </div>
                 </div>
