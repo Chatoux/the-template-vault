@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Tailwind configuration */
+@layer base {
+  :root {
+    --primary-color: #383838;
+    --secondary-color: #f4f4f3;
+    --accent-color: #ec5c39;
+  }
+
+  body {
+    @apply text-primary font-sans bg-secondary;
+  }
+}
+
+/* Component styles */
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300 ease-in-out;
+  }
+
+  .btn-accent {
+    @apply px-4 py-2 bg-accent text-white rounded hover:bg-opacity-75 transition duration-300 ease-in-out;
+  }
+
+  .link-primary {
+    @apply text-primary underline hover:text-accent transition duration-200 ease-in;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-primary;
+  }
+
+  p {
+    @apply text-base text-primary;
+  }
+
+  .text-primary {
+    @apply text-primary;
+  }
+
+  .text-secondary {
+    @apply text-secondary;
+  }
+
+  .accent-bg {
+    @apply bg-accent;
+  }
+}
+
+/* Utility classes */
+@layer utilities {
+  .bg-primary {
+    @apply bg-primary;
+  }
+
+  .text-primary {
+    @apply text-primary;
+  }
+
+  .text-secondary {
+    @apply text-secondary;
+  }
+
+  /* Responsive utility examples */
+  @media (min-width: 640px) {
+    .sm\:text-lg {
+      font-size: 1.125rem !important;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .md\:text-xl {
+      font-size: 1.25rem !important;
+    }
+  }
+}
